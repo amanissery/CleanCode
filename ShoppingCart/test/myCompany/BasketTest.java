@@ -90,8 +90,8 @@ public class BasketTest {
 		basket.add(book("10.00"));
 		basket.add(video("20.00"));
 		Promotion mockPromotion = mock(Promotion.class);
-		when(((OngoingStubbing<Object>) mockPromotion.applyTo((isA(Video.class)))).thenReturn(new BigDecimal("19.00")));
-		when(((OngoingStubbing<Object>) mockPromotion.applyTo((isA(Book.class)))).thenReturn(new BigDecimal("10.00")));
+		when(mockPromotion.applyTo(isA(Video.class))).thenReturn(new BigDecimal("19.00"));
+		when(mockPromotion.applyTo(isA(Book.class))).thenReturn(new BigDecimal("10.00"));
 		basket.setPromotion(mockPromotion);
 		compare(new BigDecimal("29.00"), basket.total());
 	}
