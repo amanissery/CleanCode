@@ -16,22 +16,22 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void outputFizzIfDividedBy3(){
-		Assert.assertEquals("fizz", fizzBuzz.generatefizzBuzz(9));
+		Assert.assertEquals("fizz", fizzBuzz.generateFizzBuzz(9));
 	}
 	
 	@Test
 	public void outputBuzzIfDividedBy5(){
-		Assert.assertEquals("buzz", fizzBuzz.generatefizzBuzz(25));
+		Assert.assertEquals("buzz", fizzBuzz.generateFizzBuzz(25));
 	}
 	
 	@Test
 	public void outputFizzBuzzIfDividedBy15(){
-		Assert.assertEquals("fizzbuzz", fizzBuzz.generatefizzBuzz(45));
+		Assert.assertEquals("fizzbuzz", fizzBuzz.generateFizzBuzz(45));
 	}
 	
 	@Test
 	public void outputSameNumberIfNoRequirementsFulfilled(){
-		Assert.assertEquals(String.valueOf(56), fizzBuzz.generatefizzBuzz(56));
+		Assert.assertEquals(String.valueOf(56), fizzBuzz.generateFizzBuzz(56));
 	}
 	
 	
