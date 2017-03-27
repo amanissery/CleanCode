@@ -1,0 +1,7 @@
+1. Search for number in an empty array
+2. Search for a valid number in an array with only one number
+3. Search for an invalid number in an array with only one number
+4. Search for a number in first index
+5. Search for a number in the last index
+6. Search for a number in between the first and last index
+7. Search for an invalid number in an array of multiple numbers
